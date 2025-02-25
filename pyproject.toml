@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pem-generator"
+version = "1.0.0"
+description = "A simple tool to generate PEM key files using Python with pyOpenSSL"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "linuxjackie", email = "jackie@beargrou.cc"}
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+]
+
+dependencies = [
+    "pyOpenSSL>=23.0.0",
+    "cryptography>=41.0.0",
+]
+
+[project.scripts]
+pem-generator = "pem_generator:main"
+
+[project.urls]
+"Homepage" = "https://github.com/linuxjackie/pem-generator"
+"Bug Tracker" = "https://github.com/linuxjackie/pem-generator/issues"
+"Documentation" = "https://github.com/linuxjackie/pem-generator#readme" 

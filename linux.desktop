@@ -3,6 +3,6 @@ Version=1.0
 Type=Application
 Name=PEM Generator
 Comment=Generate PEM key
-Exec=bash -c 'cd "$(dirname "%k")" && ./linux.sh; read -p "Press Enter to continue..."'
+Exec=bash -c 'cd "$(dirname "%k")" && ./linux.sh'
 Terminal=true
 Categories=Utility; 
